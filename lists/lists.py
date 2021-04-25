@@ -21,7 +21,7 @@ def sort_list(list):
     return list
 
 def reverse(list):
-    list.reverse()
+    list = list.reverse()
     return list
 
 
