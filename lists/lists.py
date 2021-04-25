@@ -6,8 +6,11 @@ def add_elem_to_list(list, elem):
     return list
 
 def delete_elem_from_list(list, index = -1):
+    index1=index
+    if index<0:
+        index=index*-1
     if len(list)>index:
-        list.pop(index)
+        list.pop(index1)
         return list
     else:
         return []
