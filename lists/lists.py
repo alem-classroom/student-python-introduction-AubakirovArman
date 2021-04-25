@@ -6,10 +6,11 @@ def add_elem_to_list(list, elem):
     return list
 
 def delete_elem_from_list(list, index = -1):
-   if index != -1 and len(list) > index:
-        return list.pop(index)
-    else:
-        return list.pop()
+    try:
+        list.pop(index)
+        return list 
+    except:
+        return list
 
 def count_elements_in_list(list, x):
     return list.count(x)
