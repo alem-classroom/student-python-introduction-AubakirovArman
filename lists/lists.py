@@ -7,7 +7,7 @@ def add_elem_to_list(list, elem):
 
 def delete_elem_from_list(list, index = -1):
     try:
-        list.pop(index1)
+        list.pop(index)
         return list
     except:
         return []
