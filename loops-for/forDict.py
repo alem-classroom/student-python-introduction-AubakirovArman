@@ -1,2 +1,5 @@
 def reverse_dict(dict):
-    # swap keys and values within dict and return dict
+    di={}
+    for i in dict.items():
+        di[i[1]]=i[0]
+    return di
