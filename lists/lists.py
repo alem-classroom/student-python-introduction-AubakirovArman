@@ -6,15 +6,10 @@ def add_elem_to_list(list, elem):
     return list
 
 def delete_elem_from_list(list, index = -1):
-    if index<len(list) and (len(list)*-1)<index:
-        if index==-1:
-            list.pop()
-        else:
-            list.pop(index)
-        return list
+   if index != -1 and len(list) > index:
+        return list.pop(index)
     else:
-        
-        return []
+        return list.pop()
 
 def count_elements_in_list(list, x):
     return list.count(x)
@@ -27,3 +22,6 @@ def sort_list(list):
 def reverse(list):
     list.reverse()
     return list
+
+
+print(reverse([1,12,3]))
