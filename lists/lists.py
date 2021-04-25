@@ -10,7 +10,8 @@ def delete_elem_from_list(list, index = -1):
         list.pop(index)
         return list
     except:
-        return []
+        list.pop()
+        return list
 
 def count_elements_in_list(list, x):
     return list.count(x)
