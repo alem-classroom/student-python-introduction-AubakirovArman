@@ -6,13 +6,14 @@ def add_elem_to_list(list, elem):
     return list
 
 def delete_elem_from_list(list, index = -1):
-    if index<len(list) and (len(list)*-1)<index:
-        list.pop(index)
+    if index in list:
+        for i in range(len(list)):
+            if list[i]==index:
+                list.pop(i)
+                break
         return list
     else:
-        li=[]
-        return li
-
+        return []
 def count_elements_in_list(list, x):
     return list.count(x)
 
