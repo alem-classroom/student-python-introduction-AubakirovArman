@@ -8,11 +8,10 @@ def add_elem_to_list(list, elem):
     # add elem to list and return the list
 
 def delete_elem_from_list(list, index = -1):
-
-    if(-len(list)<=index<len(list)):
-        return list.pop(index)
+    if len(list) <= index:
+        return(list)
     else:
-        return []
+        return(list.pop(index))
 
     # delete element from list, such that its index is index
     # if index is invalid, return empty list
